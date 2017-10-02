@@ -26,6 +26,7 @@ class MyStackA {
         return data[size-1];
     }
 }
+   //---------------------------------------- PnX ------------------//
 class MyStackL {
     public Node first;
 
@@ -61,6 +62,7 @@ class MyStackL {
         return first.data;
     }
 }
+   //---------------------------------------- PnX ------------------//
 public class MyStack{
     public static void main(String[] args){
     String exp = "5 3 2 + *";
@@ -76,6 +78,7 @@ public class MyStack{
             System.out.println(s.pop());
         }
     }
+   //---------------------------------------- PnX ------------------//
     static int computePostFix(String postfix){
         StringTokenizer st = new StringTokenizer(postfix," ");
         MyStackL stack =  new MyStackL(100);
@@ -104,8 +107,9 @@ public class MyStack{
             else{
                 stack.push(Integer.parseInt(s));
             }
-
+         
         }
              return stack.pop();
-    }
+    } 
 }
+//------------------------- Pnx --------------------------// 
