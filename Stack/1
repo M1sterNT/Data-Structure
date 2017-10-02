@@ -1,0 +1,39 @@
+class MyStackA {
+    int size = 0 ;
+    int data[];
+    void MyStackA(int d){
+        data = new int[d];
+    }
+    void isFull(){
+        return data.isFull();
+    }
+    void isEmtry(){
+        return data.isEmtry();
+    }
+    void push(int d){
+     data.[size++] = d;
+    }
+    int pop(){
+        if(data.isEmtry()) return false;
+        return data[--size];
+    }
+     int top(){
+        if (data.isEmtry()) return false;
+        return data[size-1];
+    }
+}
+public class MyStack{
+    public static void main(String[] args){
+    System.out.println(printNBase2(10));
+    }
+    void printNBase2(int d){
+        MyStackA s = new MyStackA(20);
+        while(d > 0){
+            s.push(n%2);
+            n/=2;
+        }
+        while(s.isEmtry){
+            System.out.println(s.pop());
+        }
+    }
+}
